@@ -1,0 +1,63 @@
+@import '~bootstrap/scss/bootstrap';
+
+
+header{
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+    .logo_mvm{
+        height: 100px;
+
+        img{
+            height: 100%;
+        }
+    }
+}
+
+main{
+    height: calc(100vh - 100px);
+    background-color: rgb(255, 255, 255);
+
+    aside{
+        background-color: rgb(0, 0, 0);
+        width: 250px;
+        height: 100%;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0;
+            margin-top: 20px;
+            li{
+                list-style: none;
+                padding: 10px;
+                color: white;
+                font-size: 1.4rem;
+                &:hover{
+                    background-color: rgb(49, 49, 49);
+                    cursor: pointer;
+                }
+                &.active{
+                    background-color: rgb(49, 49, 49);
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+                span{
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+
+.container.show{
+    img{
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
